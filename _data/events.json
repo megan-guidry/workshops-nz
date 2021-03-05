@@ -1,4 +1,5 @@
 [
   {"date": "2021-01-01", "name": "My Event", "description": "A longer description if necessary"},
-  {"date": "2021-02-02", "name": "My Event 2", "description": "A longer description if necessary 2"}
+  {"date": "2021-02-02", "name": "My Event 2", "description": "A longer description if necessary 2"},
+  {"date": "2021-04-01", "name": "My Event 3", "description": "A longer description if necessary"}
 ]
