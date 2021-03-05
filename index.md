@@ -44,6 +44,16 @@ Registration: <a href="https://pad.carpentries.org/community-discussions">Sign u
 Contact: megan.guidry@nesi.org.nz <br>
 
 {% assign today = "now" | date: "%Y-%m-%d" %}
+
+## Upcoming Workshops
+
+{% for event in site.data.events %}
+{% if event.date >= today %}
+<h4>{{ event.name }} ({{ event.date }})</h4>
+{{ event.description }}
+{% endif %}
+{% endfor %}
+
 ## Past Workshops
 
 {% for event in site.data.events %}
