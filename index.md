@@ -49,7 +49,7 @@ Contact: megan.guidry@nesi.org.nz <br>
 
 {% for event in site.data.events %}
 {% if event.date >= today %}
-<h4>{{ event.name }} ({{ event.date }})</h4>
+<h4>{{ event.name }} ({{ event.date | date: "%b %d, %Y" }})</h4>
 {{ event.description }}
 {% endif %}
 {% endfor %}
@@ -58,7 +58,7 @@ Contact: megan.guidry@nesi.org.nz <br>
 
 {% for event in site.data.events %}
 {% if event.date < today %}
-<h4>{{ event.name }} ({{ event.date }})</h4>
+<h4>{{ event.name }} ({{  event.date | date: "%b %d, %Y" }})</h4>
 {{ event.description }}
 {% endif %}
 {% endfor %}
