@@ -43,11 +43,11 @@ Contact: ngoni.faya@otago.ac.nz <br>
 Registration: <a href="https://pad.carpentries.org/community-discussions">Sign up for the discussion here</a> <br>
 Contact: megan.guidry@nesi.org.nz <br>
 
-
+{% assign today = "now" | date: "%Y-%m-%d" %}
 ## Past Workshops
 
 {% for event in site.data.events %}
-{% if {{ event.date }} < {{ "now" | date "%Y-%m-%d" }} %}
+{% if event.date < today %}
 <h4>{{ event.name }} ({{ event.date }})</h4>
 {{ event.description }}
 {% endif %}
